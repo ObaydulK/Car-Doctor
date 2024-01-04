@@ -19,7 +19,7 @@ const Home = () => {
                 <div className="bg-slate-100 text-black capitalize">
 
                     {/* navber part stard */}
-                    <div className="navbar font-bold fixed">
+                    <div className="navbar font-bold  ">
                         <div className="navbar-start">
                             <div className="dropdown">
                                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,7 +29,11 @@ const Home = () => {
                                     {Menu}
                                 </ul>
                             </div>
-                            <a className="btn btn-ghost text-xl"> Car Doctor</a>
+                            <div className="items-center ">
+                                <img src="https://i.ibb.co/xYPkgKw/Group-1-removebg-preview.png" alt="" /> 
+                                <h1 className="pl-12">Car Doctor</h1>
+                            </div>
+                              
                         </div>
                         <div className="navbar-center hidden lg:flex">
                             <ul className="menu menu-horizontal px-1">
@@ -42,10 +46,10 @@ const Home = () => {
                     </div>
                     {/* navber part end */}
                     {/* Banner part Stard */}
-                    <div className="pb-14">
-                        <div>
+                    <div className="pb-14  ">
+                        <div className=" ">
                             <div className="hero " style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-                                <div className="hero-overlay  bg-opacity-60"></div>
+                                <div className="hero-overlay min-h-screen bg-opacity-60"></div>
                                 <div className="hero-content text-center text-neutral-content">
                                     <div className="max-w-md">
                                         <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
@@ -188,7 +192,10 @@ const Home = () => {
                             </div>
                             {/* Service offer stard */}
                             <div className="bg-black  text-center text-white px-5 py-3 mt-8 run ">
-                                <img className="items-center" src="https://i.ibb.co/1m8hHh0/Group-1.png" alt="" />
+                                <div className="items-center text-center mx-24">
+                                    <img  src="https://i.ibb.co/xYPkgKw/Group-1-removebg-preview.png" alt="" />
+                                </div>
+
                                 <h1 className=" text-2xl font-bold py-2">Download</h1>
                                 <h1>Need Help? We Are Here To Help You</h1>
                                 <div className="bg-white p-5 rounded mt-4">
@@ -228,13 +235,7 @@ const Home = () => {
 
                         </div>
                     </div>
-
-
-
-
                     {/* Hero part end */}
-
-
                 </div>
                 <footer className="footer p-10 bg-neutral text-neutral-content">
                     <nav>
