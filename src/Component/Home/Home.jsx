@@ -269,7 +269,7 @@ const Home = () => {
             <div className="py-10">
                 <div className="grid grid-rows grid-flow-col gap-4">
                     <div className="card  shadow-xl">
-                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <figure><img className="w-full" src="https://i.ibb.co/xhqjvjk/Rectnjangle-7.png" alt="Shoes" /></figure>
                         <div className="card-body  items-center text-black">
                             <h2 className="card-title text-3xl">Electricol System</h2>
                             <p className="text-sky-900"> Enginer Expart   </p>
@@ -282,7 +282,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="card  shadow-xl">
-                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <figure><img className="w-full" src="https://i.ibb.co/F6NpZ1J/Rectangleg-7.png" alt="Shoes" /></figure>
                         <div className="card-body items-center text-black">
                             <h2 className="card-title text-3xl">Electricol System</h2>
                             <p className="text-sky-900"> Enginer Expart   </p>
@@ -295,7 +295,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="card  shadow-xl">
-                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <figure><img className="w-full" src="https://i.ibb.co/y5vkTfF/Rectangle-7.png" alt="Shoes" /></figure>
                         <div className="card-body items-center text-black">
                             <h2 className="card-title text-3xl">Electricol System</h2>
                             <p className="text-sky-900"> Enginer Expart   </p>
