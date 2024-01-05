@@ -1,265 +1,452 @@
-import { Link } from "react-router-dom";
-import { FaArrowRight, FaFileAlt } from "react-icons/fa";
+import { FaLongArrowAltRight, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
-    const Menu =
-        <>
-            <li> <Link to="/">Home</Link> </li>
-            <li> <Link to="/about">About</Link> </li>
-            <li> <Link to="/services">Services</Link> </li>
-            <li> <Link to="/blog">Blog</Link> </li>
-            <li> <Link to="/contact">Contact</Link> </li>
-
-
-        </>
-
     return (
         <>
-            <div>
-                <div className="bg-slate-100 text-black capitalize">
-
-                    {/* navber part stard */}
-                    <div className="navbar font-bold  ">
-                        <div className="navbar-start">
-                            <div className="dropdown">
-                                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                                </div>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                    {Menu}
-                                </ul>
-                            </div>
-                            <div className="items-center ">
-                                <img src="https://i.ibb.co/xYPkgKw/Group-1-removebg-preview.png" alt="" /> 
-                                <h1 className="pl-12">Car Doctor</h1>
-                            </div>
-                              
-                        </div>
-                        <div className="navbar-center hidden lg:flex">
-                            <ul className="menu menu-horizontal px-1">
-                                {Menu}
-                            </ul>
-                        </div>
-                        <div className="navbar-end text-black">
-                            <a className="btn btn-outline p-3">Appointment</a>
-                        </div>
+            <div className="hero  w-full min-h-72" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
+                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-content   text-neutral-content">
+                    <div className=" justify-start">
+                        <h1 className="mb-5 text-5xl font-bold">Affordable Price For Car Servicing</h1>
+                        <p className="mb-5">There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                        <button className="btn btn-primary">Discover More</button>
+                        <button className="btn btn-outline ml-5">Latest Project</button>
                     </div>
-                    {/* navber part end */}
-                    {/* Banner part Stard */}
-                    <div className="pb-14  ">
-                        <div className=" ">
-                            <div className="hero " style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-                                <div className="hero-overlay min-h-screen bg-opacity-60"></div>
-                                <div className="hero-content text-center text-neutral-content">
-                                    <div className="max-w-md">
-                                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                                        <p className="mb-5 text-justify">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                        <button className="btn btn-primary">Get Started</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Banner part end */}
-                    {/* Hero part Stard */}
-
-                    <div className=" flex">
-                        {/* left pard end  */}
-                        <div className="w-3/4 px-5 ">
-                            <div className="">
-                                <img className="w-full" src="https://i.ibb.co/nMyw2zb/Rectangle-1540.png" alt="" />
-                                <div>
-                                    <h1 className="text-4xl py-5 font-bold">Unique Car Engine Service</h1>
-                                    <p className="text-2xl text-justify"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-                                </div>
-                            </div>
-                            {/* services time stard*/}
-                            <div className="pt-10">
-                                <div className="flex gap-4  pb-5 ">
-                                    <div className="p-10  shadow bg-slate-300 rounded-lg w-3/6">
-                                        <h1 className="text-2xl font-bold">instant Care Services</h1>
-                                        <p className="">It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
-                                    </div>
-                                    <div className="p-10  shadow bg-slate-300 rounded-lg w-3/6">
-                                        <h1 className="text-2xl font-bold">24/7 Quality Service</h1>
-                                        <p className="">It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-4  ">
-                                    <div className="p-10  shadow bg-slate-300 rounded-lg w-3/6">
-                                        <h1 className="text-2xl font-bold">Easy Customer Service</h1>
-                                        <p className="">It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
-                                    </div>
-                                    <div className="p-10  shadow bg-slate-300 rounded-lg w-3/6 border-t-red-800">
-                                        <h1 className="text-2xl font-bold">Quality Cost Service</h1>
-                                        <p className="">It uses a dictionary of over 200 Latin words, combined with a model sentence structures.</p>
-                                    </div>
-                                </div>
-                                <p className=" text-2xl pt-10 text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-                            </div>
-                            {/* services time end */}
-                            {/* Car Wash Steps to Process stard */}
-                            <div className=" ">
-                                <h1 className="text-3xl py-8 font-bold">3 Simple Staps To Process</h1>
-                                <p className="text-2xl py-2xl text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-                            </div>
-                            {/* Process step  */}
-                            <div className="flex gap-5 py-10">
-                                <div className="card  items-center m-auto border ">
-                                    {/* <div className="m-auto w-3/4 h-3/4 bg-red-500  rounded-full text-3xl" >
-                                            <div className="text-center mt-14 text-5xl  ">1</div>
-                                        </div> */}
-                                    <div className="card-body bg-slate-300">
-                                        <h1 className="text-center text-3xl font-bold bg-red-600 rounded-full w-10 h-10 m-auto"> 1</h1>
-                                        <h2 className="card-title font-bold">Stap Two</h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-
-                                    </div>
-                                </div>
-                                <div className="card  items-center m-auto border ">
-                                    {/* <div className="m-auto w-3/4 h-3/4 bg-red-500  rounded-full text-3xl" >
-                                            <div className="text-center mt-14 text-5xl  ">1</div>
-                                        </div> */}
-                                    <div className="card-body bg-slate-300">
-                                        <h1 className="text-center text-3xl font-bold bg-red-600 rounded-full w-10 h-10 m-auto"> 2</h1>
-                                        <h2 className="card-title font-bold">Stap Two</h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-
-                                    </div>
-                                </div>
-                                <div className="card  items-center m-auto border ">
-                                    {/* <div className=" bg-[url('https://i.ibb.co/c8hZjjn/Group-38667.jpg ')]" >
-                                            <img className="items-center" src="https://i.ibb.co/c8hZjjn/Group-38667.jpg " alt="" />
-                                            <div className="   ">1</div>
-                                        </div> */}
-                                    <div className="card-body bg-slate-300">
-                                        <h1 className="text-center text-3xl font-bold bg-red-600 rounded-full w-10 h-10 m-auto"> 3</h1>
-                                        <h2 className="card-title font-bold">Step Three</h2>
-                                        <p>If a dog chews shoes whose shoes does he choose?</p>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            {/* Car Wash Steps to Process end */}
-
-                        </div>
-                        {/* left pard end  */}
-
-                        {/* Right side services part */}
-                        <div className="w-3/12 pr-5">
-                            <div className="bg-slate-200 px-5 pb-3 run ">
-                                <h1 className="text-black text-3xl  font-bold py-2">Services</h1>
-                                <div className="  bg-yellow-600 my-3 shadow-lg">
-                                    <h1 className=" font-bold py-2">Full Car Repair </h1>
-                                </div>
-                                <div className="  bg-slate-50 my-3 rounded ">
-                                    <h1 className=" font-bold py-2">Engine Repair </h1>
-                                </div>
-                                <div className="  bg-slate-50 my-3 rounded ">
-                                    <h1 className=" font-bold py-2">Automatic Service </h1>
-                                </div>
-                                <div className="  bg-slate-50 my-3 rounded ">
-                                    <h1 className=" font-bold py-2">Engine Oile Change </h1>
-                                </div>
-                                <div className="  bg-slate-50 my-3 rounded ">
-                                    <h1 className=" font-bold py-2">Battery Charge </h1>
-                                </div>
-                            </div>
-                            {/* service part end */}
-                            <div className="bg-black text-white px-5 pb-3 run ">
-                                <h1 className=" text-3xl  font-bold py-2">Download</h1>
-                                <div className="my-3 rounded ">
-                                    <div className="flex items-center gap-1" >
-                                        <div><FaFileAlt /></div>
-                                        <div>
-                                            <h1 className=" font-bold  ">Company Details </h1>
-                                            <h1 className="   ">Dowanload </h1>
-                                        </div>
-                                        <div className="items-end bg-red-600 p-3 rounded" ><FaArrowRight /></div>
-                                    </div>
-                                    <div className="flex items-center gap-1 py-5" >
-                                        <div><FaFileAlt /></div>
-                                        <div>
-                                            <h1 className=" font-bold  ">Company Details </h1>
-                                            <h1 className="   ">Dowanload </h1>
-                                        </div>
-                                        <div className="items-end bg-red-600 p-3 rounded" ><FaArrowRight /></div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            {/* Service offer stard */}
-                            <div className="bg-black  text-center text-white px-5 py-3 mt-8 run ">
-                                <div className="items-center text-center mx-24">
-                                    <img  src="https://i.ibb.co/xYPkgKw/Group-1-removebg-preview.png" alt="" />
-                                </div>
-
-                                <h1 className=" text-2xl font-bold py-2">Download</h1>
-                                <h1>Need Help? We Are Here To Help You</h1>
-                                <div className="bg-white p-5 rounded mt-4">
-                                    <h1 className=" font-bold text-orange-800 "> Care Doctor <span className="text-black">Special</span> </h1>
-                                    <h1 className=" text-black  ">Seve up to <span className="text-orange-800"> 60% off</span> </h1>
-                                </div>
-
-                            </div>
-                            {/* Service price stard  */}
-                            <div>
-                                <h1 className="text-3xl font-bold py-5">Price $250.00</h1>
-                                <div>
-                                    <button className="btn border-t-pink-800 w-full font-bold text-3">Proceed Checkout</button>
-                                </div>
-                            </div>
-                            {/* Right side services part */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                    </div>
-                    {/* Hero part end */}
                 </div>
-                <footer className="footer p-10 bg-neutral text-neutral-content">
-                    <nav>
-                        <header className="footer-title">Services</header>
-                        <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
-                    </nav>
-                    <nav>
-                        <header className="footer-title">Company</header>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Contact</a>
-                        <a className="link link-hover">Jobs</a>
-                        <a className="link link-hover">Press kit</a>
-                    </nav>
-                    <nav>
-                        <header className="footer-title">Legal</header>
-                        <a className="link link-hover">Terms of use</a>
-                        <a className="link link-hover">Privacy policy</a>
-                        <a className="link link-hover">Cookie policy</a>
-                    </nav>
-                </footer>
             </div>
+
+            {/* about part stard */}
+            <div className="hero text-black  ">
+                <div className="hero-content flex-col lg:flex-row">
+
+                    <div className="flex-1">
+                        <div className="absolute ">
+                            <img src="https://i.ibb.co/3FJ85YX/Rectangle-4.png " className="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+
+                        <div className=" relative ml-28 mt-48 " >
+                            <img src="https://i.ibb.co/wQXV4kG/Rectangle-5.png" className="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                    </div>
+                    <div className="flex-1 font-bold">
+                        <h1 className="text-2xl py-5 text-yellow-700">About Us</h1>
+                        <h1 className="text-5xl ">We are qualified & of experience in this field</h1>
+                        <p className="pt-6 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button className="btn btn-primary">Get More Info</button>
+                    </div>
+                </div>
+            </div>
+            {/* about part end */}
+            {/* Service part Stard */}
+            {/* services Head part */}
+            <div className="text-center font-bold py-10">
+                <h3 className="text-2xl text-yellow-900 py-4">Services</h3>
+                <h1 className="text-4xl text-black ">Our Services Area</h1>
+                <p>the majority have suffered alteration in some form, by injected humour, or  </p>
+                <p>randomised words which don't look even slightly believable.</p>
+            </div>
+            {/* services Head part */}
+            <div className="py-10">
+                <div className="grid grid-rows-2 grid-flow-col gap-4">
+                    <div className="card  bg-base-100 shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-3xl">Electricol System</h2>
+                            <div className="flex text-3xl ">
+                                <p className="text-sky-900">Price: $20.00   </p>
+                                <FaLongArrowAltRight />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  bg-base-100 shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/tPJW0ND/2.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-3xl">Engine Diagnostics</h2>
+                            <div className="flex text-3xl ">
+                                <p className="text-sky-900">Price: $20.00   </p>
+                                <FaLongArrowAltRight />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  bg-base-100 shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/3CPmNbQ/3.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-3xl">Engine Diagnostics</h2>
+                            <div className="flex text-3xl ">
+                                <p className="text-sky-900">Price: $20.00   </p>
+                                <FaLongArrowAltRight />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  bg-base-100 shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r5C9cBp/4.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-3xl">Auto Car Repair</h2>
+                            <div className="flex text-3xl ">
+                                <p className="text-sky-900">Price: $20.00   </p>
+                                <FaLongArrowAltRight />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  bg-base-100 shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/BNk9MmH/5.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-3xl">Engine Diagnostics</h2>
+                            <div className="flex text-3xl ">
+                                <p className="text-sky-900">Price: $20.00   </p>
+                                <FaLongArrowAltRight />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  bg-base-100 shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/Gcvd37W/6.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title text-3xl">Auto Car Repair</h2>
+                            <div className="flex text-3xl ">
+                                <p className="text-sky-900">Price: $20.00   </p>
+                                <FaLongArrowAltRight />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="text-center py-10">
+                    <button className="btn btn-outline text-yellow-700 text-2xl font-bold ">More services</button>
+                </div>
+            </div>
+
+            {/* Service part end */}
+
+            {/* location part stard */}
+            <div className="stats shadow text-center items-center w-full py-10 text-white mb-10">
+
+                <div className="stat">
+                    <div className="stat-figure text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <div className="stat-title">We Are open monday-friday</div>
+                    <div className="stat-value text-primary">7:00am - 9:00 pm</div>
+                </div>
+
+                <div className="stat">
+                    <div className="stat-figure text-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div className="stat-title">Have a Question ?</div>
+                    <div className="stat-value text-secondary">+2546 251 2658</div>
+                    <div className="stat-desc">21% more than last month</div>
+                </div>
+
+                <div className="stat">
+                    <div className="stat-figure text-secondary">
+                        <div className="avatar online">
+                            <div className="w-16 rounded-full">
+                                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="stat-value">Need a repair? our Address</div>
+                    <div className="stat-title">Liza Street, New York</div>
+                </div>
+
+            </div>
+            {/* location part end */}
+
+            {/* Browser our Product part stard  */}
+            {/* services Head part */}
+            <div className="text-center font-bold py-10">
+                <h3 className="text-2xl text-yellow-900 py-4">Popular Products</h3>
+                <h1 className="text-4xl text-black ">Browse Our Products</h1>
+                <p>the majority have suffered alteration in some form, by injected humour, or  </p>
+                <p>randomised words which don't look even slightly believable.</p>
+            </div>
+            {/* services Head part */}
+            <div className="py-10">
+                <div className="grid grid-rows-2 grid-flow-col gap-4">
+                    <div className="card shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="items-center card-body font-bold">
+                            <div className="rating ">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 className="  font-bold text-5xl py-5">Car Engine Plug</h2>
+                            <p className="text-sky-900 text-5xl">Price: $20.00   </p>
+                        </div>
+                    </div>
+                    <div className="card shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="items-center card-body font-bold">
+                            <div className="rating ">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 className="  font-bold text-5xl py-5">Car Air Filter</h2>
+                            <p className="text-sky-900 text-5xl">Price: $20.00   </p>
+                        </div>
+                    </div>
+                    <div className="card shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="items-center card-body font-bold">
+                            <div className="rating ">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 className="  font-bold text-5xl py-5">Cools led light</h2>
+                            <p className="text-sky-900 text-5xl">Price: $20.00   </p>
+                        </div>
+                    </div>
+                    <div className="card shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="items-center card-body font-bold">
+                            <div className="rating ">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 className="  font-bold text-5xl py-5">Car Haidrolic brak</h2>
+                            <p className="text-sky-900 text-5xl">Price: $20.00   </p>
+                        </div>
+                    </div>
+                    <div className="card shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="items-center card-body font-bold">
+                            <div className="rating ">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 className="  font-bold text-5xl py-5">Car Taiyar</h2>
+                            <p className="text-sky-900 text-5xl">Price: $20.00   </p>
+                        </div>
+                    </div>
+                    <div className="card shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="items-center card-body font-bold">
+                            <div className="rating ">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 className="  font-bold text-5xl py-5">Car Battery</h2>
+                            <p className="text-sky-900 text-5xl">Price: $20.00   </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="text-center py-10">
+                    <button className="btn btn-outline text-yellow-700 text-2xl font-bold ">More services</button>
+                </div>
+            </div>
+            {/* Browser our Product part end */}
+
+            {/* Meet our team stard  */}
+            {/* services Head part */}
+            <div className="text-center font-bold py-10">
+                <h3 className="text-2xl text-yellow-900 py-4">Team</h3>
+                <h1 className="text-4xl text-black ">Meet Our Team</h1>
+                <p>the majority have suffered alteration in some form, by injected humour, or  </p>
+                <p>randomised words which don't look even slightly believable.</p>
+            </div>
+            {/* services Head part */}
+            <div className="py-10">
+                <div className="grid grid-rows grid-flow-col gap-4">
+                    <div className="card  shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <h2 className="card-title text-3xl">Electricol System</h2>
+                            <p className="text-sky-900"> Enginer Expart   </p>
+                            <div className="flex text-4xl gap-4  ">
+                                <FaFacebook />
+                                <FaInstagram />
+                                <FaTwitter />
+                                <FaLinkedin />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="card-body items-center text-black">
+                            <h2 className="card-title text-3xl">Electricol System</h2>
+                            <p className="text-sky-900"> Enginer Expart   </p>
+                            <div className="flex text-4xl gap-4  ">
+                                <FaFacebook />
+                                <FaInstagram />
+                                <FaTwitter />
+                                <FaLinkedin />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className="w-full" src="https://i.ibb.co/r6cYBp2/1.png" alt="Shoes" /></figure>
+                        <div className="card-body items-center text-black">
+                            <h2 className="card-title text-3xl">Electricol System</h2>
+                            <p className="text-sky-900"> Enginer Expart   </p>
+                            <div className="flex text-4xl gap-4   ">
+                                <FaFacebook />
+                                <FaInstagram />
+                                <FaTwitter />
+                                <FaLinkedin />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Service part end */}
+            {/* Meet our team stard  */}
+
+
+            {/* why Choose us part stard */}
+            {/* services Head part */}
+            <div className="text-center font-bold py-10">
+                <h3 className="text-2xl text-yellow-900 py-4">Core Features</h3>
+                <h1 className="text-4xl text-black ">Why Choose Us</h1>
+                <p>the majority have suffered alteration in some form, by injected humour, or  </p>
+                <p>randomised words which don't look even slightly believable.</p>
+            </div>
+            {/* services Head part */}
+            <div className="py-10">
+                <div className="grid grid-rows grid-flow-col gap-4">
+                    <div className="card  shadow-xl">
+                        <figure><img className=" pt-8" src="https://i.ibb.co/cr2SwLC/Group-38731.png" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <p className="font-bold text-2xl"> Expert Team   </p>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className=" pt-8" src="https://i.ibb.co/x6zkhx1/Group-71.jpg" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <p className="font-bold text-2xl"> Timely Delivery   </p>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className=" pt-8" src="https://i.ibb.co/gRbfsMH/Group.jpg" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <p className="font-bold text-2xl"> 24/7 Support   </p>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className=" pt-8" src="https://i.ibb.co/wsGHj4X/Wrench.jpg" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <p className="font-bold text-2xl"> Best Equipment   </p>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className=" pt-8" src="https://i.ibb.co/hfZYbtH/Group-38730.jpg" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <p className="font-bold text-2xl"> 100% Guranty   </p>
+                        </div>
+                    </div>
+                    <div className="card  shadow-xl">
+                        <figure><img className="pt-8" src="https://i.ibb.co/cr2SwLC/Group-38731.png" alt="Shoes" /></figure>
+                        <div className="card-body  items-center text-black">
+                            <p className="font-bold text-2xl"> Market Guranty  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Service part end */}
+
+            {/* why Choose us part end */}
+
+
+            {/* What Customer Testimonial part stard   */}
+            {/* services Head part */}
+            <div className="text-center font-bold py-10">
+                <h3 className="text-2xl text-yellow-900 py-4">Testimonial</h3>
+                <h1 className="text-4xl text-black ">What Customer</h1>
+                <div className="py-4">
+                    <p>the majority have suffered alteration in some form, by injected humour, or  </p>
+                    <p>randomised words which don't look even slightly believable.</p>
+                </div>
+            </div>
+            {/* services Head part */}
+            <div className="py-10">
+                <div className="grid  grid-flow-col gap-4">
+                    <div className="card  shadow-xl">
+                        <div className="card-body p-10 text-black ">
+                            <div className=" flex items-center   ">
+                                <div>
+                                    <img className="w-20 h-20 rounded-full" src="https://i.ibb.co/18x4Zjy/r.jpg" alt="" />
+                                </div>
+                                <div className="pl-10">
+                                    <h1 className="font-bold text-2xl"> Obaydul Kuasha   </h1>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                            <p className="text-black pb-5 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ducimus exercitationem fugit, vel alias nemo sunt rem at ratione corrupti ipsa rerum ab dolore error voluptatem magnam sequi temporibus non iusto recusandae dolorem, iure fuga. Numquam rem accusantium dolorum accusamus delectus asperiores soluta corrupti, recusandae velit iure, quas atque voluptates.</p>
+                        </div>
+
+                    </div>
+                    <div className="card  shadow-xl">
+                        <div className="card-body p-10 text-black ">
+                            <div className=" flex items-center   ">
+                                <div>
+                                    <img className="w-20 h-20 rounded-full" src="https://i.ibb.co/vvJvXJr/personal-02.jpg" alt="" />
+                                </div>
+                                <div className="pl-10">
+                                    <h1 className="font-bold text-2xl"> Tayfur Sorder</h1>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                            <p className="text-black pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ducimus exercitationem fugit, vel alias nemo sunt rem at ratione corrupti ipsa rerum ab dolore error voluptatem magnam sequi temporibus non iusto recusandae dolorem, iure fuga. Numquam rem accusantium dolorum accusamus delectus asperiores soluta corrupti, recusandae velit iure, quas atque voluptates.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {/* Service part end */}
+            {/* What Customer Testimonial part end  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </>
     );
 };

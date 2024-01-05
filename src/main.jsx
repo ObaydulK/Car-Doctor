@@ -6,13 +6,26 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from "react-router-dom"; 
+import MainRouter from './MainRouter.jsx';
 import Home from './Component/Home/Home.jsx';
+import Services from './Component/Pages/Services/Services.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <MainRouter/>,
+    children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:"/services",
+        element: <Services/>
+      }
+
+    ]
   },
 ]);
 
